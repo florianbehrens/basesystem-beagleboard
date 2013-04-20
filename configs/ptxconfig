@@ -1270,7 +1270,7 @@ PTXCONF_UDEV=y
 #
 # build options                 
 #
-PTXCONF_UDEV_LEGACY=y
+# PTXCONF_UDEV_LEGACY is not set
 # PTXCONF_UDEV_DEBUG is not set
 # PTXCONF_UDEV_SYSLOG is not set
 
@@ -1290,7 +1290,6 @@ PTXCONF_UDEV_STARTSCRIPT=y
 #
 # PTXCONF_UDEV_PERSISTENT_ATA is not set
 # PTXCONF_UDEV_PERSISTENT_CDROM is not set
-# PTXCONF_UDEV_PERSISTENT_EDD is not set
 # PTXCONF_UDEV_PERSISTENT_GENERATOR is not set
 # PTXCONF_UDEV_PERSISTENT_PCI is not set
 # PTXCONF_UDEV_PERSISTENT_USB is not set
@@ -1301,14 +1300,57 @@ PTXCONF_UDEV_STARTSCRIPT=y
 # misc helper                   
 #
 # PTXCONF_UDEV_ACCELEROMETER is not set
-# PTXCONF_UDEV_ACL is not set
 # PTXCONF_UDEV_COLLECT is not set
 # PTXCONF_UDEV_MTD_PROBE is not set
 # PTXCONF_UDISKS is not set
 # PTXCONF_UPSTART is not set
 # PTXCONF_USB_MODESWITCH is not set
 # PTXCONF_USBUTILS is not set
-# PTXCONF_UTIL_LINUX_NG is not set
+PTXCONF_UTIL_LINUX_NG=y
+PTXCONF_UTIL_LINUX_NG_LIBBLKID=y
+PTXCONF_UTIL_LINUX_NG_LIBUUID=y
+# PTXCONF_UTIL_LINUX_NG_AGETTY is not set
+# PTXCONF_UTIL_LINUX_NG_COLUMN is not set
+# PTXCONF_UTIL_LINUX_NG_LINE is not set
+# PTXCONF_UTIL_LINUX_NG_ADDPART is not set
+# PTXCONF_UTIL_LINUX_NG_DELPART is not set
+# PTXCONF_UTIL_LINUX_NG_PARTX is not set
+# PTXCONF_UTIL_LINUX_NG_MOUNTPOINT is not set
+# PTXCONF_UTIL_LINUX_NG_DDATE is not set
+
+#
+# BusyBox' fdisk is selected!
+#
+# PTXCONF_UTIL_LINUX_NG_SFDISK is not set
+# PTXCONF_UTIL_LINUX_NG_CFDISK is not set
+# PTXCONF_UTIL_LINUX_NG_MKSWAP is not set
+# PTXCONF_UTIL_LINUX_NG_SWAPON is not set
+
+#
+# BusyBox' mount is selected!
+#
+
+#
+# BusyBox' umount is selected!
+#
+
+#
+# BusyBox' fsck is selected!
+#
+# PTXCONF_UTIL_LINUX_NG_IPCS is not set
+# PTXCONF_UTIL_LINUX_NG_IPCRM is not set
+# PTXCONF_UTIL_LINUX_NG_READPROFILE is not set
+# PTXCONF_UTIL_LINUX_NG_SETTERM is not set
+# PTXCONF_UTIL_LINUX_NG_CHRT is not set
+# PTXCONF_UTIL_LINUX_NG_HWCLOCK is not set
+# PTXCONF_UTIL_LINUX_NG_IONICE is not set
+# PTXCONF_UTIL_LINUX_NG_TASKSET is not set
+# PTXCONF_UTIL_LINUX_NG_MCOOKIE is not set
+# PTXCONF_UTIL_LINUX_NG_LDATTACH is not set
+# PTXCONF_UTIL_LINUX_NG_UUIDD is not set
+# PTXCONF_UTIL_LINUX_NG_UUIDGEN is not set
+# PTXCONF_UTIL_LINUX_NG_BLKID is not set
+# PTXCONF_UTIL_LINUX_NG_FINDFS is not set
 # PTXCONF_WATCHDOG is not set
 
 #
@@ -1533,6 +1575,7 @@ PTXCONF_UDEV_STARTSCRIPT=y
 # PTXCONF_LCMS is not set
 # PTXCONF_LIBARCHIVE is not set
 # PTXCONF_LIBASSUAN is not set
+PTXCONF_LIBBLKID=y
 # PTXCONF_LIBCAP_NG is not set
 # PTXCONF_LIBCAP is not set
 # PTXCONF_LIBCGROUP is not set
@@ -1554,7 +1597,28 @@ PTXCONF_UDEV_STARTSCRIPT=y
 # PTXCONF_LIBICAL is not set
 # PTXCONF_LIBIODBC is not set
 # PTXCONF_LIBJPEG is not set
-# PTXCONF_LIBKMOD is not set
+PTXCONF_LIBKMOD=y
+
+#
+# BusyBox' insmod is selected!
+#
+
+#
+# BusyBox' rmmod is selected!
+#
+
+#
+# BusyBox' lsmod is selected!
+#
+# PTXCONF_LIBKMOD_MODINFO is not set
+
+#
+# BusyBox' modprobe is selected!
+#
+# PTXCONF_LIBKMOD_DEPMOD is not set
+# PTXCONF_LIBKMOD_ZLIB is not set
+# PTXCONF_LIBKMOD_LOGGING is not set
+# PTXCONF_LIBKMOD_DEBUG is not set
 # PTXCONF_LIBKSBA is not set
 # PTXCONF_LIBLIST is not set
 # PTXCONF_LIBLTDL is not set
@@ -1583,6 +1647,7 @@ PTXCONF_UDEV_STARTSCRIPT=y
 # PTXCONF_LIBURCU is not set
 # PTXCONF_LIBUSB_COMPAT is not set
 # PTXCONF_LIBUSB is not set
+PTXCONF_LIBUUID=y
 # PTXCONF_LIBX86 is not set
 # PTXCONF_LIBXML2 is not set
 # PTXCONF_LIBXMLCONFIG is not set
