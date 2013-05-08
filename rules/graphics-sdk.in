@@ -1,0 +1,13 @@
+## SECTION=graphics_and_multimedia
+
+config GRAPHICS_SDK
+	tristate
+	prompt "TI Graphics SDK"
+	select KERNEL
+	help
+		TI Linux Graphics SDK is a single stop solution to get graphics 
+		drivers and OpenGLES1.1,2.0 and OpenVG demos running on all TI 
+		platforms.
+		
+		See http://processors.wiki.ti.com/index.php/Graphics_SDK_Quick_installation_and_user_guide
+		for more information.

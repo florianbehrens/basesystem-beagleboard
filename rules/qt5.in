@@ -1,0 +1,53 @@
+## SECTION=graphics_and_multimedia
+
+menuconfig QT5
+	tristate
+	prompt "Qt5"
+    select GRAPHICS_SDK
+	help
+		Qt is a cross-platform application and UI framework for developers 
+		using C++ or QML, a CSS & JavaScript like language.
+
+if QT5
+
+config QT5_WIDGETS
+	bool
+	default n
+	prompt "build the Qt Widgets module and dependencies"
+	help
+	  If selected the Qt Widgets module and dependencies are built
+	  and installed.
+
+config QT5_QUICK1
+	bool
+	default n
+	prompt "build the Qt Quick 1 module and dependencies"
+	help
+	  If selected the Qt Quick 1 module and dependencies are built
+	  and installed.
+
+config QT5_MULTIMEDIA
+	bool
+	default n
+	prompt "build the Qt Multimedia module and dependencies"
+	help
+	  If selected the Qt Multimedia module and dependencies are built
+	  and installed.
+
+config QT5_SVG
+	bool
+	default n
+	prompt "build the Qt SVG module and dependencies"
+	help
+	  If selected the Qt SVG (scalable vector graphics) module and 
+	  dependencies are built and installed.
+
+config QT5_WEBKIT
+	bool
+	default n
+	prompt "build the Qt WebKit module and dependencies"
+	help
+	  If selected the Qt WebKit module and dependencies are built and 
+	  installed.
+
+endif # QT5
